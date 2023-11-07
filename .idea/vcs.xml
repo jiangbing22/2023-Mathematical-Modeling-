@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cnn-lstm-bilstm-deepcnn-clstm-in-pytorch" vcs="Git" />
   </component>
 </project>
