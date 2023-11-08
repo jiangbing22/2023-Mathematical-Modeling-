@@ -2,7 +2,7 @@ import os
 from torch.utils.data import Dataset
 from pathlib import Path
 import json
-from preprocess import preprocess
+from preprocess import preprocess,test_preprocess
 import torch
 class CustomDataset(Dataset):
     def __init__(self, root_dir):
@@ -26,7 +26,6 @@ class CustomDataset(Dataset):
     def __getitem__(self, idx):
 
         file_path = self.file_paths[idx]
-        # 读取 XLSX 文件，这里以 pandas 读取为例
         data = preprocess(file_path)
         data = torch.from_numpy(data)
         data = data.to(torch.float32)
@@ -39,11 +38,48 @@ class CustomDataset(Dataset):
         parent_directory = os.path.basename(os.path.dirname(file_path))
         return self.label[parent_directory]
 
-if __name__ == "__main__":
-    root_directory = os.path.join("","dataset","top")
-    dataset = CustomDataset(root_directory)
 
-    # 通过下标访问数据集中的样本
-    sample_data, sample_category = dataset[0]
-    print(sample_data,sample_category)
-    print(sample_data.size())
+import os
+import pandas as pd
+from torch.utils.data import Dataset
+
+class testDataset(Dataset):
+    def __init__(self, folder_path):
+        self.folder_path = folder_path
+        self.file_list = [file for file in os.listdir(folder_path) if file.endswith('.xlsx')]
+
+    def __len__(self):
+        return len(self.file_list)
+
+    def __getitem__(self, idx):
+        file_name = self.file_list[idx]
+        file_path = os.path.join(self.folder_path, file_name)
+        data = test_preprocess(file_path)
+        data = torch.from_numpy(data)
+        data = data.to(torch.float32)
+
+        # 在这里进行任何必要的数据处理、转换或预处理
+        # 例如：将数据转换为 PyTorch Tensor 或进行其他预处理操作
+        # data = your_preprocessing_function(data)
+
+        return file_name,data  # 返回数据（可能需要根据需求调整）
+
+# 用法示例
+ # 获取第一个 xlsx 文件中的数据
+# 注意：你可能需要根据实际情况自定义数据集的预处理方式
+
+if __name__ == "__main__":
+    # root_directory = os.path.join("","dataset","test")
+    # dataset = CustomDataset(root_directory)
+    #
+    # # 通过下标访问数据集中的样本
+    # sample_data, sample_category = dataset[0]
+    # print(sample_data,sample_category)
+    # print(sample_data.size())
+    folder_path = os.path.join("dataset","test")  # 更改为你的文件夹路径
+    dataset = testDataset(folder_path)
+
+    # 通过索引访问数据集中的元素
+    example_data = dataset[0]
+    print(dataset)
+    print(example_data)

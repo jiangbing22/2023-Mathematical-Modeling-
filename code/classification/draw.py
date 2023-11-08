@@ -22,6 +22,5 @@ def viz():
     MyConvNetVis.view()
 import hiddenlayer as h
 
-vis_graph = h.build_graph(model, x)  # 获取绘制图像的对象
-vis_graph.theme = h.graph.THEMES["blue"].copy()  # 指定主题颜色
-vis_graph.save("data/demo1.png")  # 保存图像的路径
+if __name__ == '__main__':
+    viz()

@@ -11,10 +11,22 @@ def preprocess(file):
     df.drop(df.columns[-1:-15:-1], axis=1, inplace=True)
     # 对数据框执行均值归一化
     df = mean_normalize(df)
+
     df.dropna(inplace=True)
     array=df.values
-    #df.to_excel('result.xlsx')
+    df.to_excel('result.xlsx')
+    return array
+def test_preprocess(file):
+    df = pd.read_excel(file)
+    # 如前一样删除列
+    df.drop(["证券代码", '公司发布财报的日期', '财报统计的季度的最后一天','年份', '季度', '已获利息倍数', '主营营业收入(元)','流通股本', '总股本'], axis=1, inplace=True)
+    # 对数据框执行均值归一化
+    df = mean_normalize(df)
+
+    df.dropna(inplace=True)
+    array=df.values
+    # df.to_excel('result2.xlsx')
     return array
 
 if __name__ == "__main__":
-    preprocess("000006.xlsx")
+    test_preprocess("dataset/test/sh.600009.xlsx")

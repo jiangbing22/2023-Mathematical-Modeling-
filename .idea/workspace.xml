@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ff11496-4878-4cd6-b150-7d013aefb5d0" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper/B题任务一 11.2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/paper/B题任务一 11.2.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/MK model/mk.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/MK model/mk.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/classification/data/Digraph.gv" beforeDir="false" afterPath="$PROJECT_DIR$/code/classification/data/Digraph.gv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/classification/data/Digraph.gv.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/classification/data/Digraph.gv.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/classification/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/classification/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/classification/draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/classification/draw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/classification/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/classification/preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/classification/result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/~$金融数模论文.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/~WRL0003.tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,22 +65,26 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/50513/Desktop/大湾区/code/classification/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\50513\Desktop\大湾区\code\classification\dataset\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\50513\Desktop\大湾区\code\classification" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.draw">
     <configuration name="MSU" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="大湾区" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,6 +129,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="draw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="大湾区" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/classification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/classification/draw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="大湾区" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/classification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/classification/predict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="大湾区" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,6 +197,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.draw" />
+        <item itemvalue="Python.predict" />
         <item itemvalue="Python.dataset" />
         <item itemvalue="Python.preprocess" />
         <item itemvalue="Python.MSU" />
@@ -158,7 +214,10 @@
       <option name="presentableId" value="Default" />
       <updated>1699104527835</updated>
       <workItem from="1699104529849" duration="1581000" />
-      <workItem from="1699246582288" duration="27497000" />
+      <workItem from="1699246582288" duration="32945000" />
+      <workItem from="1699335583561" duration="3145000" />
+      <workItem from="1699345405304" duration="4913000" />
+      <workItem from="1699364575961" duration="1975000" />
     </task>
     <servers />
   </component>
@@ -166,11 +225,12 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/agent_py$draw.coverage" NAME="draw 覆盖结果" MODIFIED="1699286353236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
-    <SUITE FILE_PATH="coverage/agent_py$dataset.coverage" NAME="dataset 覆盖结果" MODIFIED="1699281404378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
+    <SUITE FILE_PATH="coverage/agent_py$draw.coverage" NAME="draw 覆盖结果" MODIFIED="1699334087354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
+    <SUITE FILE_PATH="coverage/agent_py$dataset.coverage" NAME="dataset 覆盖结果" MODIFIED="1699332701028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
     <SUITE FILE_PATH="coverage/agent_py$train.coverage" NAME="train 覆盖结果" MODIFIED="1699290573268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
     <SUITE FILE_PATH="coverage/agent_py$LSTM.coverage" NAME="LSTM 覆盖结果" MODIFIED="1699271401175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
-    <SUITE FILE_PATH="coverage/agent_py$preprocess.coverage" NAME="preprocess 覆盖结果" MODIFIED="1699264755868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
+    <SUITE FILE_PATH="coverage/agent_py$preprocess.coverage" NAME="preprocess 覆盖结果" MODIFIED="1699332617686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
+    <SUITE FILE_PATH="coverage/agent_py$predict.coverage" NAME="predict 覆盖结果" MODIFIED="1699333573201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/classification" />
     <SUITE FILE_PATH="coverage/$MSU.coverage" NAME="MSU 覆盖结果" MODIFIED="1699104732457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/DeepTrader-main/src/model" />
   </component>
 </project>
